@@ -1,0 +1,482 @@
+.About-Page-Background {
+  margin-left: 10px;
+  background-color: #b5d4ed7a;
+  width: 99%;
+  height: 203.3vh;
+  border: 2px solid black;
+  border-radius: 70px;
+  box-shadow: 5px 5px 5px 5px rgba(6, 6, 6, 0.264);
+}
+
+/* Medium screens (like tablets) */
+@media (max-width: 1024px) {
+  .About-Page-Background {
+    height: auto; /* let it adjust naturally */
+    border-radius: 40px; /* smaller roundness for tablets */
+  }
+}
+
+/* Small screens (mobile phones) */
+@media (max-width: 480px) {
+  .About-Page-Background {
+    margin-left: 5px;
+    width: 95%;
+    border-radius: 20px;
+    height: auto; /* don't force vh on mobile */
+  }
+}
+
+/* @media (max-width:100vw) {
+.About-Page-Background{
+  margin-left:10px ;
+  background-color: #b5d4ed7a;
+  width:99%;
+  height:203.3vh;
+  border: 2px solid black;
+  border-radius: 70px;
+  box-shadow: 5px 5px 5px 5px rgba(6, 6, 6, 0.264);
+}
+}
+@media(max-width:480px){
+  .About-Page-Background{
+  margin-left:10px ;
+  background-color: #b5d4ed7a;
+  width:99%;
+  height:203.3vh;
+  border: 2px solid black;
+  border-radius: 70px;
+  box-shadow: 5px 5px 5px 5px rgba(6, 6, 6, 0.264);
+  }
+} */
+.About-Page1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
+    cursor: grab;
+}
+.About-Page2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 100px;
+    cursor: grab;
+    margin-bottom: 90px;
+}
+@media (max-width: 1024px) {
+  .About-Page1,
+  .About-Page2 {
+    height: auto; /* allow flexible height */
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+  .About-Page1,
+  .About-Page2 {
+    flex-direction: column; /* stack items vertically */
+    align-items: center;    /* center items horizontally */
+    width: 95%;
+    margin-left: 5px;
+    height: auto;
+  }
+
+  .About-Page1 {
+    margin-top: 20px; /* reduce spacing for smaller screen */
+  }
+
+  .About-Page2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+.Create{
+    width: 700px;
+    height: 500px;
+    margin-top: 130px;
+    padding-bottom: 40px;
+    background-color: rgba(148, 185, 197, 0.403);
+    border: 1.5px solid black;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 7px 7px 7px rgb(163, 124, 124);
+}
+.Read{
+    width: 700px;
+    height: 500px;
+    margin-top: 130px;
+    padding-bottom: 40px;
+    background-color: rgba(148, 185, 197, 0.403);
+    border: 1.5px solid black;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 7px 7px 7px rgb(163, 124, 124);
+}
+.Update{
+    width: 700px;
+    height: 500px;
+    margin-top: 130px;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+   background-color: rgba(148, 185, 197, 0.403);
+    border: 1.5px solid black;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 7px 7px 7px rgb(163, 124, 124);
+}
+.Delete{
+    width: 700px;
+    height: 500px;
+    margin-top: 130px;
+     margin-bottom: 40px;
+    padding-bottom: 40px;
+    background-color: rgba(148, 185, 197, 0.403);
+    border: 1.5px solid black;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 7px 7px 7px rgb(163, 124, 124);
+}
+.image{
+  width: 700px;
+  height: 300px;
+  cursor: crosshair;  
+}
+@media (max-width: 1024px) {
+  .Create,.Read,.Update,.Delete{
+    width: 90%;
+    height: auto;   /* let content decide height */
+    margin-top: 80px;
+  }
+
+  .image {
+    height: auto;
+    width: 100%;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+  .Create,.Read,.Update,.Delete {
+    width: 95%;
+    height: auto;
+    margin-top: 40px;
+    padding: 20px;
+  }
+
+  .image {
+    height: auto;
+     width: 100%;
+  }
+}
+
+.Create > p,.Read > p,.Update > p,.Delete > p{
+ font-family:Georgia, 'Times New Roman', Times, serif;
+ font-size: 40px;
+ font-weight: bold;
+ text-align: center;
+ margin: 0px;
+ background-color: #ace9be;
+}
+.Read > h3,.Update >h3{
+  margin-top: 19px;
+  font-size: 22px;
+  font-weight: bold;
+  padding:  0 10px 0 10px;
+  background-color: #deedbb5b;
+}
+.Create > h3{
+  font-size: 22px;
+  margin-top: 20px;
+  padding:  0 9px 0 14px;
+  background-color: #deedbb5b;
+}
+.Delete > h3{
+  font-size: 21.5px;
+  margin-top: 21px;
+  padding:  0 5px 0 3px;
+ background-color: #deedbb5b;
+
+}
+.CRUD-Heading {
+  font-size: 50px;
+  margin-left: 25px;
+  text-align: center;
+  color: black;
+  background-color: blanchedalmond;
+  border: 1px solid black;
+  border-radius: 15px ;
+  width: 95%;
+}
+.CRUD-Heading:hover{
+  background-color: rgb(243, 210, 166);
+  cursor: pointer;
+}
+.CRUD-Content:hover{
+  background-color: #ef4e8c63;
+  cursor: pointer;
+}
+.CRUD-Content{
+  background-color: #eac0ee;
+  border: 2px solid black;
+  border-radius: 15px;
+  width: 88%;              /* take most of the box width */
+  margin: 20px auto;            /* center horizontally */
+  padding: 15px;
+  text-align: justify;     /* spread words evenly across lines */
+  font-size: 30px;         /* bigger, readable text */
+  font-weight: bold;
+  line-height: 1.6; 
+  display: block;           /* force block-level layout */
+  white-space: normal; 
+}
+.Footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.686);
+    height: 10%;
+    border: 1px solid black;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    box-shadow: 3px 3px 3px 3px rgba(119, 110, 110, 0.271);
+}
+@media(max-width:1024px){
+  .Footer{
+    height: auto;
+    width: 100%;
+  }
+}
+@media(max-width:48px){
+  .Footer{
+    height: auto;
+    width: 100%;
+  }
+}
+.NavLink {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 33px;
+    text-decoration: none;
+    padding-top: 20px;
+    transition: transform 0.3s;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.408);
+  }
+.NavLink:hover{
+ color: rgb(199, 233, 76);
+}
+
+  .Social-Container{
+    display: flex;
+    flex-direction: column;
+    gap:7px;
+    margin:  0;
+    padding: 30px;
+    color: white;
+    list-style: none;
+    text-align: left;
+  }
+
+ .social-icon {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px;
+  font-size: 20px;
+  color: white; 
+  text-decoration: none;
+}
+
+
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+.phone{
+  color: #6dd869;
+}
+.phone { color: #2ecc71; }      /* Green */
+.Email { color: #e74c3c; }      /* Red */
+.Linkedin { color: #0077b5; }   /* Blue */
+.github { color: #000000; }        /* Black */
+.Instagram { 
+  color: #E1306C;               /* Pinkish */
+}
+
+
+.Terms-Heading {
+  font-size: 50px;
+  margin-left: 25px;
+  text-align: center;
+  color: black;
+  background-color: rgb(248, 255, 205);
+  border: 1px solid black;
+  border-radius: 15px ;
+  width: 95%;
+  cursor: pointer;
+}
+.Terms{
+  background-color: #c0eed0;
+  border: 2px solid black;
+  border-radius: 15px;
+  width: 88%;              /* take most of the box width */
+  margin: 20px auto;            /* center horizontally */
+  padding: 15px;
+  text-align: justify;     /* spread words evenly across lines */
+  font-size: 30px;         /* bigger, readable text */
+  font-weight: bold;
+  line-height: 1.6; 
+  display: block;           /* force block-level layout */
+  white-space: normal; 
+  cursor: pointer;
+}
+.Terms-Content{
+  margin: 100px 0 60px 500px;
+  padding: 25px;
+  font-size: 25px;
+  width: 50%;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: rgba(185, 167, 167, 0.385);
+}
+.Terms-Content p{
+  padding-left: 30px;
+}
+.TermsBack-Button {
+  background-color: #58bbf0;
+  color: black;
+  padding: 15px;
+  margin-left: 1030px;
+  font-size: 20px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 1px 1px 1px 1px rgba(63, 62, 62, 0.59);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.474);
+}
+.TermsBack-Button:hover{
+  background-color: #eac0ee;
+}
+.Terms-Background{
+background-color: #ffffff;
+height: 150vh;
+}
+
+.Privacy-Heading {
+  font-size: 50px;
+  margin-left: 25px;
+  text-align: center;
+  color: black;
+  background-color: rgb(205, 242, 255);
+  border: 1px solid black;
+  border-radius: 15px ;
+  width: 95%;
+  cursor: pointer;
+}
+.Privacy{
+  background-color: #eec0d6;
+  border: 2px solid black;
+  border-radius: 15px;
+  width: 88%;              /* take most of the box width */
+  margin: 20px auto;            /* center horizontally */
+  padding: 15px;
+  text-align: justify;     /* spread words evenly across lines */
+  font-size: 30px;         /* bigger, readable text */
+  font-weight: bold;
+  line-height: 1.6; 
+  display: block;           /* force block-level layout */
+  white-space: normal; 
+  cursor: pointer;
+}
+.Privacy-Content{
+  margin: 100px 0 60px 500px;
+  padding: 25px;
+  font-size: 25px;
+  width: 50%;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: rgba(249, 229, 199, 0.679);
+}
+.Privacy-Content p{
+  padding-left: 30px;
+}
+.PrivacyBack-Button{
+  background-color: #58bbf0;
+  color: black;
+  padding: 15px;
+  margin-left: 1030px;
+  font-size: 20px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 1px 1px 1px 1px rgba(63, 62, 62, 0.59);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.474);
+}
+.PrivacyBack-Button:hover{
+  background-color: #1dbd95;
+}
+.FAQ-Heading {
+  font-size: 50px;
+  margin-left: 25px;
+  text-align: center;
+  color: black;
+  background-color: rgb(205, 242, 255);
+  border: 1px solid black;
+  border-radius: 15px ;
+  width: 95%;
+  cursor: pointer;
+}
+.FAQ{
+  background-color: #eec0d6;
+  border: 2px solid black;
+  border-radius: 15px;
+  width: 88%;              /* take most of the box width */
+  margin: 20px auto 60px auto;            /* center horizontally */
+  padding: 15px;
+  text-align: justify;     /* spread words evenly across lines */
+  font-size: 20px;         /* bigger, readable text */
+  font-weight: bold;
+  line-height: 1.6; 
+  display: block;           /* force block-level layout */
+  white-space: normal; 
+  cursor: pointer;
+  
+}
+.FAQ p{
+  padding-left: 25px;
+}
+
+.PrivacyBack-Button {
+  background-color: #58bbf0;
+  color: black;
+  padding: 15px;
+  margin-left: 1030px;
+  font-size: 20px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 1px 1px 1px 1px rgba(63, 62, 62, 0.59);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.474);
+}
+
+.FAQBack-Button {
+  background-color: #58bbf0;
+  color: black;
+  padding: 15px;
+  margin-left: 1030px;
+  font-size: 20px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 1px 1px 1px 1px rgba(63, 62, 62, 0.59);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.474);
+}
+.FAQBack-Button:hover{
+  background-color: #94c483;
+}

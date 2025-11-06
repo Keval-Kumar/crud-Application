@@ -1,0 +1,119 @@
+.Post-Page-Background {
+  margin: 16px;
+  width: 98.5%;
+  height: 95vh;
+  background-color: #f1e9156a;
+  border: 2px solid black;
+  border-radius: 70px;
+  box-shadow: 5px 5px 5px 5px rgba(6, 6, 6, 0.264);
+}
+@media(max-width:1024px){
+  .Post-Page-Background{
+    width: 80%;
+    height:auto;
+  }
+}
+@media(max-width:480px){
+  .Post-Page-Background{
+     width: 100%;
+    font-size: 16px;
+    display: block;          /* make table scrollable */
+    overflow-x: auto;        /* horizontal scroll if too wide */
+    white-space: nowrap; 
+  }
+}
+.Post-Page-Background:hover {
+  background-color: #9ce69c7d;
+}
+
+.Post-Page-Header {
+  margin-top: 250px;
+  font-size: 50px;
+  text-align: center;
+  color: black;
+}
+
+.Post-Page-Header:hover {
+  color: rgba(17, 17, 17, 0.612);
+}
+
+.Post-Page {
+  margin: auto;
+  border-collapse: collapse;
+  width: 50%;
+ 
+  padding: 60px 60px 60px 60px;
+  text-align: center;
+  font-size: 20px;
+  background-color: rgb(198, 211, 190);
+  border: 2px solid black;
+  border-radius: 35px;
+  box-shadow: 5px 5px 5px 5px rgba(6, 6, 6, 0.264);
+}
+
+@media(max-width:1024px){
+  .Post-Page{
+    width: 80%;
+    height:auto;
+  }
+}
+@media(max-width:480px){
+  .Post-Page{
+     width: 100%;
+    font-size: 16px;
+    display: block;          /* make table scrollable */
+    overflow-x: auto;        /* horizontal scroll if too wide */
+    white-space: nowrap; 
+  }
+}
+.Post-Page:hover {
+  background-color: rgba(92, 183, 191, 0.445)
+}
+
+.Post-Page-Button {
+  background-color: rgb(150, 150, 211);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;  /* centers horizontally */
+  align-items: center;  /* centers vertically inside container */
+  margin: 0 auto;  /* center the button block itself */
+  width: fit-content;  /* button takes only as much width as needed */
+  padding: 10px 20px;  /* some spacing inside */
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0);
+  box-shadow: 2px 2px 2px 2px rgba(6, 6, 6, 0.264);
+}
+
+.Post-Page-Button:hover {
+  background-color: rgba(226, 68, 126, 0.69);
+}
+
+.Post-Page-Button-Container {
+  display: flex;
+  justify-content: center;  /* center horizontally */
+  gap: 30px;  /* space between buttons */
+  margin-top: 30px;  /* space above buttons */
+}
+
+.Post-Page-Button-Container button {
+  background-color: rgb(235, 175, 116);
+  border: 1px solid black;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0);
+  box-shadow: 2px 2px 2px 2px rgba(6, 6, 6, 0.264);
+}
+
+button a {
+  text-decoration: none;
+}
+
+.Post-Page-Button-Container button:hover {
+  background-color: #63ed5e7a;
+}

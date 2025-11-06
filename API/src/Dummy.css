@@ -1,0 +1,26 @@
+.userlist {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid black;
+  margin: 1px;
+  padding: 20px;
+  list-style: none;
+}
+.listHeading {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid black;
+  margin: 1px;
+  padding: 20px;
+  list-style: none;
+  font-weight: bold;
+  font-size: larger;
+}
+.Heading {
+  font-size: 30px;
+  text-align: center;
+}
+.listhead2 {
+  font-size: 20px;
+  text-align: center;
+}
